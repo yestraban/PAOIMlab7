@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.domrowka.javafx_wreszcie_to_zrobie.HelloController">
+   <children>
+      <TextField fx:id="imie" layoutX="300.0" layoutY="122.0" />
+      <TextField fx:id="nazw" layoutX="300.0" layoutY="166.0" />
+      <Label layoutX="228.0" layoutY="126.0" text="Imię" />
+      <Label layoutX="214.0" layoutY="170.0" text="Nazwisko" />
+      <Button layoutX="274.0" layoutY="236.0" mnemonicParsing="false" onAction="#onLoginButtonClick" text="Zaloguj" />
+      <CheckBox fx:id="zalogujAdminaCheck" layoutX="302.0" layoutY="79.0" mnemonicParsing="false" text="Zaloguj admina" />
+   </children>
+</AnchorPane>
