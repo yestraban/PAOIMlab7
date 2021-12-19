@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.domrowka.javafx_wreszcie_to_zrobie.StudentViewController">
+   <children>
+      <ComboBox fx:id="subjectCombo" layoutX="43.0" layoutY="44.0" onAction="#subjectChange" prefHeight="26.0" prefWidth="159.0" promptText="Wybierz zajęcia" />
+      <Button fx:id="wypiszButton" layoutX="43.0" layoutY="89.0" mnemonicParsing="false" onAction="#setWypiszButton" prefHeight="26.0" prefWidth="159.0" text="Wypisz z przedmiotu" />
+      <Button fx:id="zapiszButton" layoutX="43.0" layoutY="224.0" mnemonicParsing="false" onAction="#setZapiszButton" prefHeight="26.0" prefWidth="159.0" text="Zapisz na przedmiot" />
+      <ListView fx:id="listview" layoutX="286.0" layoutY="89.0" prefHeight="200.0" prefWidth="192.0" />
+      <Label layoutX="286.0" layoutY="61.0" text="Oceny" />
+      <Label layoutX="286.0" layoutY="313.0" prefHeight="26.0" prefWidth="66.0" text="średnia" />
+      <TextField fx:id="meanTextField" editable="false" layoutX="353.0" layoutY="314.0" prefHeight="26.0" prefWidth="122.0" />
+      <Label layoutX="291.0" layoutY="356.0" text="Stan" />
+      <TextField fx:id="conditionTextField" editable="false" layoutX="353.0" layoutY="360.0" prefHeight="26.0" prefWidth="122.0" />
+      <Button fx:id="zmienButton" layoutX="43.0" layoutY="314.0" mnemonicParsing="false" onAction="#changeStudentCondition" prefHeight="26.0" prefWidth="159.0" text="Zmień status studenta" />
+      <ComboBox fx:id="allSubjectsCombo" layoutX="43.0" layoutY="187.0" prefHeight="26.0" prefWidth="159.0" promptText="Wszystkie zajęcia" />
+      <Button fx:id="przepiszButton" layoutX="43.0" layoutY="122.0" mnemonicParsing="false" onAction="#setPrzepiszButton" prefHeight="26.0" prefWidth="159.0" text="Przepisz na inną grupę" />
+      <ComboBox fx:id="chooseStdCond" layoutX="43.0" layoutY="276.0" prefHeight="26.0" prefWidth="159.0" promptText="Wybierz status" />
+      <Label layoutX="286.0" layoutY="25.0" text="Status studenta" />
+      <TextField fx:id="stdStatusTextBox" editable="false" layoutX="395.0" layoutY="20.0" prefHeight="26.0" prefWidth="122.0" />
+   </children>
+</AnchorPane>
